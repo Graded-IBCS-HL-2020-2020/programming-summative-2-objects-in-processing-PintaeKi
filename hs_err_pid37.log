@@ -1,0 +1,33 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007f07cd0ca401, pid=37, tid=42
+#
+# JRE version: OpenJDK Runtime Environment (11.0.8+10) (build 11.0.8+10-post-Ubuntu-0ubuntu118.04.1)
+# Java VM: OpenJDK 64-Bit Server VM (11.0.8+10-post-Ubuntu-0ubuntu118.04.1, mixed mode, sharing, tiered, compressed oops, serial gc, linux-amd64)
+# Problematic frame:
+# C  [libjimage.so+0x2401]
+#
+# Core dump will be written. Default location: Core dumps may be processed with "/usr/share/apport/apport %p %s %c %d %P %E" (or dumping to /home/runner/summative2Vidal/core.37)
+#
+# If you would like to submit a bug report, please visit:
+#   https://bugs.launchpad.net/ubuntu/+source/openjdk-lts
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: Sketch
+
+Host: Intel(R) Xeon(R) CPU @ 2.30GHz, 4 cores, 953M, Ubuntu 18.04.5 LTS
+Time: Sun Nov  8 16:20:52 2020 UTC elapsed time: 2256 seconds (0d 0h 37m 36s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007f07c8059000):  JavaThread "Signal Dispatcher" daemon [_thread_in_vm, id=42, stack(0x00007f07b0001000,0x00007f07b0102000)]
+
+Stack: [0x00007f07b0001000,0x00007f07b0102000],  sp=0x00007f07b00ff1e0,  free space=1016k
+Native frames: (J=compiled Java code, A=aot compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [libjimage.so+0x2401]
+C  [libjimage.so+0x30ea]
+C  [libjimage.so+0x35c6]  JIMAGE_FindResource+0xd6
+V
